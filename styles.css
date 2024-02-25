@@ -1,0 +1,839 @@
+@font-face {
+    font-family: 'Pieces';
+    src: url('font/pieces.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Crow';
+    src: url('font/crows.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Song';
+    src: url('font/song.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fell';
+    src: url('font/fell.ttf') format('truetype');
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img/bg5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container {
+    background-color: #D7CEB2;
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 20);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8%;
+    background-color: #D2B48C;
+    color: #000000;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.header-icon {
+    width: 8%; /* Adjust the width as needed */
+    height: auto;
+    margin: 0 40px; /* Adjust the margin as needed */
+}
+
+header h1 {
+    font-family: "Song", Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+}
+
+#imgreemplaza{
+    display:none;
+    width: 30%;
+    height: auto;
+    margin: auto;
+}
+
+#imgreemplaza1{
+    display:block;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #3E2723;
+    /* Color de fondo para los elementos del menú */
+    display: inline-block;
+    width: 100px;
+}
+
+nav a:hover {
+    background-color: #D2B48C;
+    color: #3E2723;
+    box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
+    border-radius: 5px; /* Radio del borde */
+    transition: all 0.5s ease; /* Agrega transición suave */
+}
+
+/*Div del contenido.*/
+#content {
+    text-align: center;
+}
+
+/*Tanlas del contenido, ya que intentaré hacerlo todo en tablas*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+th {
+    background-color: #3E2723;
+    color: white;
+}
+
+/*Texto de la intro*/
+
+.styled-paragraphs p {
+    margin-bottom: 20px;
+}
+
+.styled-paragraphs p:first-child {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.styled-paragraphs p::before {
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+.styled-paragraphs p::after {
+    font-size: 2em;
+    margin-left: 5px;
+}
+
+#mapa {
+    width: 85%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    /* Añadir una sombra */
+}
+
+
+/*Iconos grande parte superior*/
+.mediumlicon {
+    width: 15%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/*Iconos de reinos*/
+.smallicon {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Estilos para tablas dobles*/
+.reinos-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Línea horizontal*/
+
+.reino {
+    flex: 1;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.reino ul li a {
+    font-family: 'Fell';
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    border: 1px solid #3E2723;
+    border-radius: 5px;
+    color: #3E2723;
+    background-color: #D2B48C;
+    transition: all 0.3s ease;
+}
+
+.reino ul li a:hover {
+    background-color: #3E2723;
+    color: #D2B48C;
+    box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
+    border-radius: 5px; /* Radio del borde */
+    transition: all 0.5s ease; /* Agrega transición suave */
+    
+}
+
+.reino:not(:last-child) {
+    border-right: 1px solid #000;
+    /* Línea vertical entre elementos */
+}
+
+.reino+.reino {
+    margin-left: 20px;
+    /* Espacio entre elementos */
+}
+
+.reino h1 {
+    font-family: "Song", Arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.reino hr {
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.reino h2 {
+    font-family: "Pieces", Arial, sans-serif;
+    font-size: 40px;
+}
+
+/*Imagen grande, revisar*/
+
+#escudo {
+    width: 90%;
+    height: auto;
+}
+
+#descripcion {
+    font-size: 14px;
+    color: #2d2d2d;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/*HERMANDADES*/
+
+.hermandades-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre elementos de la cuadrícula */
+}
+
+.hermandades-grid a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.hermandad {
+    text-align: center;
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados para estética */
+}
+
+.hermandad:hover{
+    box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
+    border-radius: 5px; /* Radio del borde */
+    transition: all 0.5s ease; /* Agrega transición suave */
+}
+
+.hermandad img {
+    width: 100%;
+    height: 150px; /* Altura fija para todas las imágenes */
+    object-fit: contain; /* Ajusta la imagen sin cortar ninguna parte */
+    border-radius: 8px; /* Bordes redondeados para estética */
+    border: 1px solid #ddd; /* Borde para la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/*PERSONAJES HERMANDAD*/
+
+.hermandad-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hermandad-container a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hermandad-container a:hover {
+    box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
+    border-radius: 5px; /* Radio del borde */
+    transition: all 0.5s ease; /* Agrega transición suave */
+}
+
+.hermandad-personajes {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+}
+
+
+/*LETRAS PERSONAJES*/
+
+/* Estilos para los contenedores de letras y personajes */
+.abecedario-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre elementos de la cuadrícula */
+}
+
+.letra-container {
+    text-align: center;
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados para estética */
+}
+
+.letra-container a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto */
+}
+
+.letra-container a:hover {
+    box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
+    border-radius: 5px; /* Radio del borde */
+    transition: all 0.5s ease; /* Agrega transición suave */
+}
+
+.letra-container h1 {
+    font-family: "Song", Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0; /* Remove default margin */
+    margin-bottom: 5px;
+}
+
+.personajes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Espacio entre elementos de la cuadrícula */
+}
+
+.carta-personaje {
+    text-align: center;
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 4px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados para estética */
+    font-weight: bold;
+}
+
+.carta-personaje P{
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.carta-personaje img {
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    object-fit: contain;
+    border-radius:30px;
+}
+
+/*HTMLS DE PERSONAJES*/
+
+/* Estilos para la sección de introducción y detalles del personaje */
+
+.character-intro {
+    text-align: left;
+}
+
+.imagenhistoria {
+    width: 90%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    margin: auto;
+    display: block;
+}
+
+.character-intro h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Pieces", Arial, sans-serif;
+    font-size: 80px;
+    margin-bottom: 10px; /* Añade espacio entre el título y la línea */
+    border-bottom: 1px solid rgb(138, 138, 138);
+}
+
+
+.tabla-personaje{
+    float: right;
+    margin-left: 30px;
+    width: 20%;
+}
+
+.tabla-personaje th{
+    text-align: center;
+}
+
+.tabla-personaje td:first-child {
+    width: 30%;  /* Puedes ajustar el porcentaje según tus necesidades */
+    font-weight: bold;
+}
+
+.tabla-personaje td:nth-child(2) {
+    text-align: center;
+}
+
+.tabla-personaje a {
+    font-weight: bold;
+    color: #564440; /* Set your desired color for the link text */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+.tabla-personaje a:hover {
+    transition: 0.5s;
+    color: #D2B48C; /* Set your desired color for the link text on hover */
+    text-decoration: underline; /* Add underlines on hover */
+}
+
+.character-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Añade bordes redondeados a la imagen */
+    border: 1px solid #ddd; /* Borde para la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y la tabla */
+}
+
+
+.character-intro p{
+    margin-top: 20px; /* Añade espacio entre el título y el texto */
+    margin-left: 10px;
+    color: #333; /* Cambia el color del texto normal */
+    font-size: 17px;
+}
+
+.icharacter-intro p .resaltado {
+    font-weight: bold; /* Hace que las palabras resaltadas sean más audaces */
+}
+
+.character-intro h2 {
+    text-align: center;
+    font-family: "Pieces", Arial, sans-serif;
+    font-size: 80px;
+    margin-bottom: 10px; /* Añade espacio entre el título y la línea */
+    margin-top: 0;
+}
+
+
+.character-intro h2:after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 0.5px; 
+    background-color: #000; 
+    margin-top: 5px; 
+}
+
+
+
+/*TABLA HISTORIA*/
+
+/* Estilos para la sección de historia */
+
+.historia {
+    margin-bottom: 20px;
+    clear: both;
+
+}
+
+.historia p {
+    text-align: left;
+}
+
+.image-container-left {
+    max-width: 20%;
+    float: left; /* Float the image container to the left */
+    box-sizing: border-box;
+    padding: 0 20px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    margin-right: 20px; /* Add some margin to create space between the image and text */
+    margin-bottom: 10px;
+
+}
+
+.image-container-right {
+    max-width: 20%;
+    float: right; /* Float the image container to the left */
+    box-sizing: border-box;
+    padding: 0 20px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    margin-right: 10px; /* Add some margin to create space between the image and text */
+    margin-left: 10px;
+}
+
+.image-container-left img,
+.image-container-right img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 8px;
+}
+
+.image-description {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center; /* This will override the text-align in .historia p */
+}
+
+.historia .image-description {
+    text-align: center; /* Center the text */
+}
+
+.tituloizq {
+    text-align: left;
+    margin: 30px 0 20px 30px; /* Top right bottom left margin */
+    font-size: 50px;
+    font-family: "Song", Arial, sans-serif;
+    border-bottom: 1px solid #6a6868;
+    width: 95%;
+    display: block;
+}
+
+/*GALERIA PERSONAJES*/
+
+/* Estilos para la sección de la galería */
+.character-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);  /* Grid de 6 columnas */
+    gap: 20px;  /* Espacio entre elementos del grid */
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    text-align: center;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.character-gallery a{
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto */
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    border: 1px solid #ddd; /* Borde para las imágenes */
+    border-radius: 5px;
+    padding:3px;
+}
+
+.gallery-item:hover {
+    box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
+    border-radius: 5px; /* Radio del borde */
+    transition: all 0.5s ease; /* Agrega transición suave */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Añade bordes redondeados a las imágenes */
+    margin-bottom: 10px; /* Espacio entre las imágenes y la descripción */
+}
+
+.gallery-item p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/*CONTACTO*/
+
+.contact-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p strong {
+    font-weight: bold;
+}
+
+.social-icon {
+    font-size: 24px; /* Tamaño del icono */
+    margin-right: 15px; /* Ajusta el espacio entre el icono y el texto */
+}
+
+#descripsion {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+    }
+
+    h1 {
+        margin: 0; /* Remove default margin for h1 element */
+        margin-bottom: 20px;
+    }
+
+    .reinos-container {
+        flex-direction: column;
+        /* Cambiar a diseño de columna en pantallas más pequeñas */
+    }
+
+    .reino, .hermandades-grid {
+        flex-basis: calc(100% - 20px);
+        /* Ajustar el ancho de cada elemento en dispositivos móviles */
+        /* 20px es el espacio entre elementos (gap) */
+    }
+
+
+    .reino:not(:last-child) {
+        border-right: 0px;
+        /* Línea vertical entre elementos */
+    }
+
+    .hermandades-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Cambiar a diseño de 2 columnas en pantallas más pequeñas */
+    }
+
+    .reino + .reino {
+        margin-top: 20px;
+        /* Agregar espacio entre el segundo div con clase "reino" y las hermandades */
+    }
+
+    nav {
+        text-align: center;
+        display: block; 
+    }
+
+    nav a {
+        display: block; 
+        margin: 15px auto; 
+        width: 80%;
+        max-width: 300px; 
+        padding: 12px; 
+        border-radius: 5px;
+        background-color: #3E2723; 
+        color: white; 
+        text-decoration: none; 
+    }
+
+    header img{
+        display:none;
+    }
+
+    #container {
+        width: 90%;
+    }
+
+    .smallicon {
+        width: 50%;
+        /* Ajustar tamaño de iconos en pantallas pequeñas */
+    }
+
+    #imgreemplaza{
+        display:block;
+    }
+
+    #imgreemplaza1{
+        display:none;
+    }
+
+    /*QUERY PERSONAJES*/
+
+    /* Styles for the letters of the abecedary */
+    .abecedario-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Styles for the character cards */
+    .carta-personaje {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*PERSONAJES*/
+
+    .character-intro {
+        text-align: center; /* Cambia la alineación del texto a centrado */
+    }
+
+    .tabla-personaje {
+        float: none; /* Elimina el flotador */
+        margin-left: 0;
+        width: 100%; /* Ocupa el ancho completo del contenedor */
+    }
+
+    .tabla-personaje th {
+        text-align: center;
+    }
+
+    .character-image img {
+        border-radius: 0; /* Elimina los bordes redondeados */
+        border: none; /* Elimina el borde para la imagen */
+        margin-bottom: 0; /* Elimina el espacio entre la imagen y la tabla */
+    }
+
+    .character-intro p {
+        text-align: left;
+        margin-top: 10px; /* Ajusta el espacio entre el título y el texto */
+        margin-left: 5;
+        font-size: 16px; /* Ajusta el tamaño de fuente */
+    }
+
+    .character-intro h2 {
+        font-size: 60px; /* Ajusta el tamaño de fuente del título */
+        margin-bottom: 5px; /* Ajusta el espacio entre el título y la línea */
+    }
+
+    .character-intro h2:after {
+        width: 100%; /* Ajusta el ancho de la línea */
+        margin-top: 3px; /* Ajusta el espacio entre el título y la línea */
+    }
+
+
+
+
+    /*HISTORIA*/
+
+    .historia,
+    .image-container-left,
+    .image-container-right {
+        max-width: 100%;
+        float: none;
+        box-sizing: border-box;
+        padding: 0 10px;
+        border-radius: 8px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .historia p,
+    .historia  {
+        text-align: left;
+    }
+
+    .image-description{
+        text-align: center;
+    }
+
+    .tituloizq {
+        text-align: center;
+        margin: 30px 0 20px 0;
+        width: 100%;
+    }
+
+    .image-container-left,
+    .image-container-right {
+        margin-right: 0;
+    }
+
+    /*GALERIA*/
+
+    .character-gallery {
+        grid-template-columns: repeat(3, 1fr);  /* Cambia a 3 columnas en dispositivos móviles */
+    }
+
+    footer{
+        padding:5px;
+    }
+
+    .hermandad-personajes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*CONTACTO*/
+
+    .contact-info p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    /* Color de fondo para el pie de página */
+    color: #616161;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer img{
+    width: 15px;
+    height: auto;
+}
+
+/* Scroll bar track */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3E2723; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #D2B48C; 
+  }
+  
+  /* Handle on active or clicked */
+  ::-webkit-scrollbar-thumb:active {
+    background: #3E2723;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #4d4d4c; 
+  }
