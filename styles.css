@@ -333,6 +333,7 @@ ul li {
 .letra-container a {
     text-decoration: none; /* Elimina el subrayado */
     color: inherit; /* Hereda el color del texto */
+    flex-basis: calc(33.33% - 10px);
 }
 
 .letra-container a:hover {
@@ -350,8 +351,11 @@ ul li {
 }
 
 .personajes-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
     gap: 10px; /* Espacio entre elementos de la cuadrícula */
 }
 
