@@ -340,6 +340,8 @@ ul li {
     box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
     border-radius: 5px; /* Radio del borde */
     transition: all 0.5s ease; /* Agrega transición suave */
+    transform: scale(1.05); /* Slight scale increase on hover */
+
 }
 
 .letra-container h1 {
