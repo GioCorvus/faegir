@@ -610,6 +610,18 @@ ul li {
     margin-right: 15px; /* Ajusta el espacio entre el icono y el texto */
 }
 
+.contact-info a {
+    color: #64452f; /* Brown color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .contact-info a:hover {
+    color: #a95611; /* Darker brown color on hover */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a shadow to the text on hover */
+
+}
+
 #descripsion {
     text-align: center;
 }
