@@ -331,12 +331,17 @@ ul li {
 
 /* Estilos para los contenedores de letras y personajes */
 .abecedario-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
     gap: 20px; /* Espacio entre elementos de la cuadrícula */
 }
 
 .letra-container {
+    max-width: 500px;
+    width: 30%;
     text-align: center;
     border: 1px solid #ddd; /* Borde gris claro */
     padding: 10px; /* Espaciado interno */
@@ -638,12 +643,35 @@ ul li {
     text-align: center;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1350px){
 
-    .abecedario-container {
-        grid-template-columns: repeat(2, 1fr);
+
+    .letra-container{
+        width: 29%;
+        }
+}
+
+@media screen and (max-width: 1260px){
+
+
+    .hermandades-grid a{
+        width: 40%;
+        }
+
+    .hermandad img{
+        width: 80%;
     }
 }
+
+@media screen and (max-width: 1050px){
+
+
+    .letra-container{
+        width: 40%;
+        }
+}
+
+
 
 
 @media screen and (max-width: 850px) {
@@ -664,6 +692,10 @@ ul li {
         /* Cambiar a diseño de columna en pantallas más pequeñas */
     }
 
+    .letra-container{
+    width: 90%;
+    }
+
     .reino, .hermandades-grid {
         flex-basis: calc(100% - 20px);
         /* Ajustar el ancho de cada elemento en dispositivos móviles */
@@ -681,9 +713,23 @@ ul li {
         /* Cambiar a diseño de 2 columnas en pantallas más pequeñas */
     }
 
+    .hermandades-grid a{
+        width:40%;
+    }
+
+    .hermandad img{
+        width: 100%;
+    }
+
+
+
+
     .reino + .reino {
         margin-top: 20px;
         /* Agregar espacio entre el segundo div con clase "reino" y las hermandades */
+    }
+
+    .hermandad{
     }
 
     nav {
