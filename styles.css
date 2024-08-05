@@ -259,8 +259,11 @@ ul li {
 /*HERMANDADES*/
 
 .hermandades-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /*display: grid;
+    grid-template-columns: repeat(3, 1fr);*/
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
     gap: 20px; /* Espacio entre elementos de la cuadrícula */
 }
 
@@ -291,7 +294,7 @@ ul li {
 }
 
 .hermandad img {
-    width: 100%;
+    width: 200px;
     height: 150px; /* Altura fija para todas las imágenes */
     object-fit: contain; /* Ajusta la imagen sin cortar ninguna parte */
     border-radius: 8px; /* Bordes redondeados para estética */
@@ -350,7 +353,7 @@ ul li {
     box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
     border-radius: 5px; /* Radio del borde */
     transition: all 0.5s ease; /* Agrega transición suave */
-    transform: scale(1.05); /* Slight scale increase on hover */
+    transform: scale(1.15); /* Slight scale increase on hover */
 
 }
 
