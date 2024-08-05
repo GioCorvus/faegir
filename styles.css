@@ -190,8 +190,10 @@ th {
     border: 1px solid #3E2723;
     border-radius: 5px;
     color: #3E2723;
+    width: 140px;
     background-color: #D2B48C;
     transition: all 0.3s ease;
+    transform: scale(1);
 }
 
 .reino ul li a:hover {
@@ -199,6 +201,7 @@ th {
     color: #D2B48C;
     box-shadow: 0 0 10px black; /* Añade una sombra al pasar el cursor */
     border-radius: 5px; /* Radio del borde */
+    transform: scale(1.05);
     transition: all 0.5s ease; /* Agrega transición suave */
     
 }
@@ -261,9 +264,16 @@ ul li {
     gap: 20px; /* Espacio entre elementos de la cuadrícula */
 }
 
-.hermandades-grid a{
+.hermandades-grid a {
     text-decoration: none;
     color: inherit;
+    display: inline-block; /* Ensure that transform works */
+    transition: transform 0.3s ease; /* Smooth transition */
+    transform: scale(1); /* Base scale */
+}
+
+.hermandades-grid a:hover {
+    transform: scale(1.05); /* Slightly grows the element on hover */
 }
 
 
@@ -619,7 +629,6 @@ ul li {
   .contact-info a:hover {
     color: #a95611; /* Darker brown color on hover */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add a shadow to the text on hover */
-z
 }
 
 #descripsion {
@@ -634,7 +643,7 @@ z
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     header {
         display: flex;
         flex-direction: column;
