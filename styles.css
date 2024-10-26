@@ -440,7 +440,7 @@ ul li {
 }
 
 .tabla-personaje td:first-child {
-    width: 30%;  /* Puedes ajustar el porcentaje según tus necesidades */
+    width: 40%;  /* Puedes ajustar el porcentaje según tus necesidades */
     font-weight: bold;
 }
 
