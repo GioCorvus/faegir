@@ -321,9 +321,10 @@ ul li {
 }
 
 .hermandad-personajes {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    gap: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 10px; /* Espacio entre elementos de la cuadrícula */
 }
 
 
